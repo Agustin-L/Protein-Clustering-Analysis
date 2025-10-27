@@ -1,0 +1,31 @@
+Instruções para rodar o script Proteinas.py
+
+1. Certifique-se de ter Python 3 instalado no seu computador.
+2. Instale as bibliotecas necessárias (pandas, numpy, scikit-learn, matplotlib, scipy):
+   pip install pandas numpy scikit-learn matplotlib scipy
+
+3. Execute o script com o comando abaixo, ajustando os caminhos se necessário:
+
+python "C:\Users\Administrador\Desktop\Projeto BD Python\Proteinas.py" ^
+  --fasta "C:\Users\Administrador\Desktop\Projeto BD Python\astral-scopedom-seqres-gd-sel-gs-bib-95-2.08.fa.txt" ^
+  --outdir "C:\Users\Administrador\Desktop\Projeto BD Python\out_Proteinas" ^
+  --skips "0,1,2" ^
+  --limit 300 ^
+  --pca_components 200 ^
+  --max_k 15 ^
+  --select_by calinski ^
+  --run_dbscan ^
+  --plot
+
+Explicação dos parâmetros:
+--fasta        : Caminho para o arquivo FASTA com as sequências.
+--outdir       : Diretório onde os resultados e gráficos serão salvos.
+--skips        : Valores de skip para calcular features 2x2 binário.
+--limit        : Número máximo de sequências a serem processadas.
+--pca_components : Número de componentes a serem usadas no PCA.
+--max_k        : Número máximo de clusters a serem testados.
+--select_by    : Critério para escolher o melhor clustering (silhouette, calinski, davies).
+--run_dbscan   : Executa o algoritmo DBSCAN além dos outros.
+--plot         : Gera gráficos de PCA e métricas.
+
+4. Após a execução, todos os resultados estarão dentro da pasta especificada em --outdir.
