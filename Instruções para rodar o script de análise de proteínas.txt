@@ -6,15 +6,15 @@ Instruções para rodar o script Proteinas.py
 
 3. Execute o script com o comando abaixo, ajustando os caminhos se necessário:
 
-python "C:\Users\Administrador\Desktop\Projeto BD Python\Proteinas.py" ^
-  --fasta "C:\Users\Administrador\Desktop\Projeto BD Python\astral-scopedom-seqres-gd-sel-gs-bib-95-2.08.fa.txt" ^
-  --outdir "C:\Users\Administrador\Desktop\Projeto BD Python\out_Proteinas" ^
-  --skips "0,1,2" ^
-  --limit 300 ^
-  --pca_components 200 ^
-  --max_k 15 ^
-  --select_by calinski ^
-  --run_dbscan ^
+python "C:\Users\Administrador\Desktop\Projeto BD Python\Proteinas.py" `
+  --fasta "C:\Users\Administrador\Desktop\Projeto BD Python\astral-scopedom-seqres-gd-sel-gs-bib-95-2.08.fa.txt" `
+  --outdir "C:\Users\Administrador\Desktop\Projeto BD Python\out_Proteinas" `
+  --skips "0,1,2" `
+  --limit 300 `
+  --pca_components 200 `
+  --max_k 15 `
+  --select_by calinski `
+  --run_dbscan `
   --plot
 
 Explicação dos parâmetros:
